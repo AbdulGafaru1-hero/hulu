@@ -4,8 +4,15 @@
     padding: 20px;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
     overflow-x: scroll;
+}
+
+.header::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .header>img{
@@ -27,13 +34,14 @@ cursor: pointer;
 }
 .header__icon>.MuiSvgIcon-root{
     font-size: 30px;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .header__icon > p{
     text-transform: uppercase;
-    letter-spacing: 3px;display: none;
+    letter-spacing: 3px;
+    display: none;
     margin-left: auto;
     margin-right: auto;
     font-size: small;
